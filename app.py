@@ -7,6 +7,7 @@ is_online = True
 
 patient_name = "John Smith"
 age = 20
-is_new_patient = True
+is_new_patient = True 
 
-print(age, first_name, is_online)
+name = input("What is you name? ")
+print("Hello " + name)
