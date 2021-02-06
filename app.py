@@ -1,13 +1,14 @@
-age = 20
-age = 30
+# birth_year = input("Enter your birth year ");
+# age = 2021 - int(birth_year);
+# print(age);
 
-price = 99.50
-first_name = "Elijah"
-is_online = True
+# number_one = float(input("Enter the fisrt number"))
+# number_two = int(input("Enter the second number"))
+# print("Sum: ", str(number_one + number_two))
 
-patient_name = "John Smith"
-age = 20
-is_new_patient = True 
-
-name = input("What is you name? ")
-print("Hello " + name)
+course = "Python for beginners"
+print(course.upper())
+print(course)
+print(course.find('be'));
+print(course.replace('for', '4'))
+print('Python' in course)
