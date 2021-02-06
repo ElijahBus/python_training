@@ -1,31 +1,27 @@
-# print(3 + 4)
-# print(5 - 2)
-# print(8 / 2)
-# print(10 // 3)
-# print(10 % 3)
-# print(100 ** 3)
+is_hot = False
+is_cold = True
 
-# number = 10
-# number += 3
-# print(number)
-# number -= 3
-# print(number)
-# number *= 3
-# print(number)
+if is_hot:
+  print("It is hot today")
+  print("Drink plenty of water")
+elif is_cold:
+  print("It is a cold day")
+  print("Wear warm clothes")
+else:
+  print("It is a lovely day")
 
-# operator precedence
-# print((10 + 3) * 2)
+# formatted string
+price = 1000000
+print(f"Enjoy your day ${price}")
 
-# comparison operator
-# print(3 == 2)
-# print(2 != 1)
-# print(4 <= 3)
+# logical operator
+has_good_credit = False
+has_high_income = True
+has_criminal_record = False
 
-# Math functions
-import math
-
-print(round(2.9))
-print(abs(-5))
-print(math.ceil(2.9))
-print(math.floor(2.9))
-
+if has_good_credit and has_high_income:
+  print("Elligible for loan")
+elif has_good_credit or has_high_income:
+  print("Elligible for loan to pay in 30 days")
+elif  has_high_income and not has_criminal_record:
+  print("Elligible for 2 days loan")
