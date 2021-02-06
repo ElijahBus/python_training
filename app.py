@@ -1,14 +1,31 @@
-# birth_year = input("Enter your birth year ");
-# age = 2021 - int(birth_year);
-# print(age);
+# print(3 + 4)
+# print(5 - 2)
+# print(8 / 2)
+# print(10 // 3)
+# print(10 % 3)
+# print(100 ** 3)
 
-# number_one = float(input("Enter the fisrt number"))
-# number_two = int(input("Enter the second number"))
-# print("Sum: ", str(number_one + number_two))
+# number = 10
+# number += 3
+# print(number)
+# number -= 3
+# print(number)
+# number *= 3
+# print(number)
 
-course = "Python for beginners"
-print(course.upper())
-print(course)
-print(course.find('be'));
-print(course.replace('for', '4'))
-print('Python' in course)
+# operator precedence
+# print((10 + 3) * 2)
+
+# comparison operator
+# print(3 == 2)
+# print(2 != 1)
+# print(4 <= 3)
+
+# Math functions
+import math
+
+print(round(2.9))
+print(abs(-5))
+print(math.ceil(2.9))
+print(math.floor(2.9))
+
