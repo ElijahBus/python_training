@@ -1,27 +1,57 @@
-is_hot = False
-is_cold = True
+# while loop
+# i = 1
+# while i <= 5:
+#   print("*" * i)
+#   i += 1
+# print("Done")
 
-if is_hot:
-  print("It is hot today")
-  print("Drink plenty of water")
-elif is_cold:
-  print("It is a cold day")
-  print("Wear warm clothes")
-else:
-  print("It is a lovely day")
+# Guess game with while loop
+# secret = 9
+# counter = 1
 
-# formatted string
-price = 1000000
-print(f"Enjoy your day ${price}")
+# while counter <= 3:
+#   guess = int(input("Guess: "))
+  
+#   if guess == secret:
+#     print("You won !")
+#     break
+  
+#   counter += 1
+# else:
+#   print("Sorry you failed !")
 
-# logical operator
-has_good_credit = False
-has_high_income = True
-has_criminal_record = False
+# For loop
+# for item in ["Elijah", "Becky", "Prodo"]:
+#   print(item)
 
-if has_good_credit and has_high_income:
-  print("Elligible for loan")
-elif has_good_credit or has_high_income:
-  print("Elligible for loan to pay in 30 days")
-elif  has_high_income and not has_criminal_record:
-  print("Elligible for 2 days loan")
+# for item in range(4, 10):
+#   print(item)
+
+# for item in range(1, 10, 2):
+#   print(item)
+
+# Exercise
+# total = 0
+# prices = [10, 20, 30]
+# for price in prices:
+#   total += price
+# print(f"Total: {total}")
+
+# Nested loops
+# Cordinates challenge 1
+# for x in range(4):
+#   for y in range(3):
+#     for z in range(2):
+#       print(f'({x}, {y}, {z})')
+
+# Print F, L Challenge 2
+numbers = [2,2,2,5,5]
+for number in numbers:
+  output = ''
+  for value in range(number):
+    output += 'x'
+  
+  print(output)
+
+
+
