@@ -1,57 +1,22 @@
-# while loop
-# i = 1
-# while i <= 5:
-#   print("*" * i)
-#   i += 1
-# print("Done")
+names = ['Elijah', 'Mosh', 'Sarah', 'John',  'David']
+print(names[2:])
 
-# Guess game with while loop
-# secret = 9
-# counter = 1
+# Get max elememt in a list
+# numbers = [2,4,5,6,7,8]
+# max_number = numbers[0] 
 
-# while counter <= 3:
-#   guess = int(input("Guess: "))
+#challenge : remove duplicate elements from an array
+# numbers = [2,2,2,4,5,6,7]
+# unique_numbers = []
+
+# for i in numbers:
+#   if i not in unique_numbers:
+#     unique_numbers.append(i)
   
-#   if guess == secret:
-#     print("You won !")
-#     break
-  
-#   counter += 1
-# else:
-#   print("Sorry you failed !")
+# print(unique_numbers)
 
-# For loop
-# for item in ["Elijah", "Becky", "Prodo"]:
-#   print(item)
+#unpacking
+coordinates = (1,2,3)
+x, y, z = coordinates
 
-# for item in range(4, 10):
-#   print(item)
-
-# for item in range(1, 10, 2):
-#   print(item)
-
-# Exercise
-# total = 0
-# prices = [10, 20, 30]
-# for price in prices:
-#   total += price
-# print(f"Total: {total}")
-
-# Nested loops
-# Cordinates challenge 1
-# for x in range(4):
-#   for y in range(3):
-#     for z in range(2):
-#       print(f'({x}, {y}, {z})')
-
-# Print F, L Challenge 2
-numbers = [2,2,2,5,5]
-for number in numbers:
-  output = ''
-  for value in range(number):
-    output += 'x'
-  
-  print(output)
-
-
-
+print(y);
