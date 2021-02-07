@@ -1,19 +1,17 @@
-import converters
-from converters import lbs_to_kg
-import random
+from pathlib import  Path
 
-# import ecommerce.shipping
-# from ecommerce.shipping import calc_shipping
-from ecommerce import shipping
+# Absolute path : start from the drive
+# Relative path : relative to the current 
+# 
 
-lbs_to_kg(200)
+path = Path("ecommerce")
+# print(path.exists())
 
-print(converters.kg_to_lbs(70))
+path2 = Path("emails")
+# path2.mkdir()
+# path2.rmdir()
 
-# Package usage
-shipping.calc_shipping()
-
-# Generate random values 
-
-for i in range(3):
-  print(random.randint(2,6))
+current_path = Path()
+for file in current_path.glob('*'):
+  print(file)
+  
