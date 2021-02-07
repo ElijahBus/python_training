@@ -1,33 +1,19 @@
-class Common:
-  def move(self):
-    print("move")
+import converters
+from converters import lbs_to_kg
+import random
 
-class Point(Common):
-  def __init__(self, x, y):
-    self.x = x
-    self.y = y
+# import ecommerce.shipping
+# from ecommerce.shipping import calc_shipping
+from ecommerce import shipping
 
-  def draw(self):
-    print("draw")
+lbs_to_kg(200)
 
+print(converters.kg_to_lbs(70))
 
-class Person:
-  def __init__(self, name):
-    self.name = name
+# Package usage
+shipping.calc_shipping()
 
-  def talk(self):
-    print(f"Hi, I am {self.name}")
+# Generate random values 
 
-class Dog(Common):
-  pass
-
-
-point1 = Point(10,20)
-print(point1.move())
-print(point1.x)
-
-person1 = Person("Charlie")
-person1.talk();
-
-dog = Dog()
-dog.move()
+for i in range(3):
+  print(random.randint(2,6))
