@@ -1,22 +1,35 @@
-names = ['Elijah', 'Mosh', 'Sarah', 'John',  'David']
-print(names[2:])
+# customer = {
+#   'name': 'Elijah',
+#   'age': 30,
+#   'is_verified' : True,
+# }
+# customer['name'] = "JOshua"
+# customer['birthdate'] = 'Sep 12, 2020'
+# print(customer.get('birthdate', 'Oct 12, 1990'))
 
-# Get max elememt in a list
-# numbers = [2,4,5,6,7,8]
-# max_number = numbers[0] 
+# Challenge : digits to words converter
+# phone = input("Phone: ")
+# digits_mapping = {
+#   "1": "One",
+#   "2": "Two",
+#   "3": "Three"
+# }
 
-#challenge : remove duplicate elements from an array
-# numbers = [2,2,2,4,5,6,7]
-# unique_numbers = []
+# output = ""
+# for char in phone:
+#   output += digits_mapping.get(char, "!") + " "
+# print(output)
 
-# for i in numbers:
-#   if i not in unique_numbers:
-#     unique_numbers.append(i)
-  
-# print(unique_numbers)
+#Challenge Emoji converter
 
-#unpacking
-coordinates = (1,2,3)
-x, y, z = coordinates
+message = input("> ")
+words = message.split(" ");
 
-print(y);
+emojis = {
+  ':)': "😇 ",
+  '(:': "😠 "
+}
+output = ""
+for word in words:
+  output += emojis.get(word, word) + " "
+print(output)
