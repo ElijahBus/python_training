@@ -1,35 +1,14 @@
-# customer = {
-#   'name': 'Elijah',
-#   'age': 30,
-#   'is_verified' : True,
-# }
-# customer['name'] = "JOshua"
-# customer['birthdate'] = 'Sep 12, 2020'
-# print(customer.get('birthdate', 'Oct 12, 1990'))
+# def greet_user(first_name, last_name):
+#   print(f"Hello {first_name} {last_name}")
+#   print("Greet from function")
 
-# Challenge : digits to words converter
-# phone = input("Phone: ")
-# digits_mapping = {
-#   "1": "One",
-#   "2": "Two",
-#   "3": "Three"
-# }
+# print("Start")
+# greet_user(last_name="John", first_name="Smith")
+# print("Finish")
 
-# output = ""
-# for char in phone:
-#   output += digits_mapping.get(char, "!") + " "
-# print(output)
+def square(number):
+  print(number * number)
 
-#Challenge Emoji converter
-
-message = input("> ")
-words = message.split(" ");
-
-emojis = {
-  ':)': "😇 ",
-  '(:': "😠 "
-}
-output = ""
-for word in words:
-  output += emojis.get(word, word) + " "
-print(output)
+print('start')
+print(square(3))
+print('finish')
